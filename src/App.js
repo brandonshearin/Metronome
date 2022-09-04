@@ -1,25 +1,16 @@
-import logo from './logo.svg';
 import './App.css';
+import React from 'react'
+import shapes from './shapes'
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+  // const [animated, setAnimated] = React.useState(false)
+
+  return shapes.map(({component, name}, index) => {
+    return React.createElement(component, {className: `shape-${index} ${name}`})
+  })
 }
+
+
+
 
 export default App;
