@@ -2,14 +2,12 @@ html, body {
   height: 100%;
   width: 100%;
   overflow: hidden;
+  background-color: #EEE2CA;
 }
 
-/* .box.drop-in {
-  animation: drop-in 1000ms;
+.root {
+  position: relative;
 }
-.box.animated {
-  animation: move 2000ms infinite linear;
-} */
 
 @keyframes move {
   0% {
